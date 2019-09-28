@@ -9,20 +9,25 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #DAE3E7;
+  background: #dae3e7;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #778492;
 }
 
 a {
-  color: #3AAA64;
+  color: #3aaa64;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -39,7 +44,8 @@ a:focus {
   text-decoration: none;
 }
 
-.btn, a.btn {
+.btn,
+a.btn {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -49,17 +55,20 @@ a:focus {
   font-weight: bold;
 }
 
-.btn .svg-inline--fa, a.btn .svg-inline--fa {
+.btn .svg-inline--fa,
+a.btn .svg-inline--fa {
   margin-right: 5px;
   position: relative;
   top: -2px;
 }
 
-.btn:focus, a.btn:focus {
+.btn:focus,
+a.btn:focus {
   color: #fff;
 }
 
-a.btn-cta-primary, .btn-cta-primary {
+a.btn-cta-primary,
+.btn-cta-primary {
   background: #54ba4e;
   border: 1px solid #54ba4e;
   color: #fff;
@@ -67,21 +76,24 @@ a.btn-cta-primary, .btn-cta-primary {
   text-transform: uppercase;
 }
 
-a.btn-cta-primary:hover, .btn-cta-primary:hover {
+a.btn-cta-primary:hover,
+.btn-cta-primary:hover {
   background: #49ac43;
   border: 1px solid #49ac43;
   color: #fff;
 }
 
-a.btn-cta-secondary, .btn-cta-secondary {
-  background: #479FC8;
-  border: 1px solid #479FC8;
+a.btn-cta-secondary,
+.btn-cta-secondary {
+  background: #479fc8;
+  border: 1px solid #479fc8;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-a.btn-cta-secondary:hover, .btn-cta-secondary:hover {
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
   background: #3893bd;
   border: 1px solid #3893bd;
   color: #fff;
@@ -92,7 +104,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover {
 }
 
 .badge-theme {
-  background: #3AAA64;
+  background: #3aaa64;
   font-size: 12px;
   color: #fff;
   -webkit-border-radius: 2px;
@@ -140,7 +152,7 @@ a.dotted-link:hover {
 
 .header .profile-content .desc {
   color: #778492;
-  font-family: "Lato", arial, sans-serif;
+  font-family: 'Lato', arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   margin-top: 0;
@@ -265,7 +277,7 @@ a.dotted-link:hover {
 }
 
 .latest .has-ribbon .text {
-  background: #3AAA64;
+  background: #3aaa64;
   color: #fff;
 }
 
@@ -290,14 +302,15 @@ a.dotted-link:hover {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #479FC8;
+  background-color: #479fc8;
   -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
   -moz-transform: rotate(45deg) translate3d(0, 0, 0);
   -ms-transform: rotate(45deg) translate3d(0, 0, 0);
   -o-transform: rotate(45deg) translate3d(0, 0, 0);
 }
 
-.latest .has-ribbon .ribbon .text:before, .latest .has-ribbon .ribbon .text:after {
+.latest .has-ribbon .ribbon .text:before,
+.latest .has-ribbon .ribbon .text:after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -315,6 +328,21 @@ a.dotted-link:hover {
 }
 
 /* Projects Section */
+.icons__list {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.icons__image {
+  max-width: 220px;
+  margin: 2rem;
+  list-style: none;
+}
+
 .projects .item {
   margin-bottom: 30px;
 }
@@ -432,7 +460,7 @@ a.dotted-link:hover {
   color: #ccd1d6;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Lato", arial, sans-serif;
+  font-family: 'Lato', arial, sans-serif;
   position: absolute;
   right: 0;
   top: 0;
@@ -510,7 +538,7 @@ a.dotted-link:hover {
 }
 
 .education .item .university {
-  font-family: "Lato", arial, sans-serif;
+  font-family: 'Lato', arial, sans-serif;
   font-size: 13px;
   color: #999;
   font-weight: 600;
