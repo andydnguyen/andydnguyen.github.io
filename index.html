@@ -40,7 +40,7 @@
         <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
         <link rel="apple-touch-icon" href="assets/favicon-180.png" />
-        <link rel="stylesheet" href="assets/css/main.css?v=2" />
+        <link rel="stylesheet" href="assets/css/main.css?v=3" />
 
         <!-- Structured data -->
         <script type="application/ld+json">
@@ -54,7 +54,7 @@
             "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
             "worksFor": { "@type": "Organization", "name": "Breezy HR" },
             "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of North Florida" },
-            "knowsAbout": ["Full-stack JavaScript", "Node.js", "TypeScript", "React", "AI/LLM", "AWS Bedrock", "MongoDB", "Microservices"],
+            "knowsAbout": ["Full-stack JavaScript", "Node.js", "TypeScript", "React", "AI/LLM", "MongoDB", "Microservices"],
             "sameAs": [
                 "https://github.com/andydnguyen",
                 "https://www.linkedin.com/in/andydnguyen/",
@@ -163,7 +163,7 @@
                         </div>
                         <div class="about__body" data-reveal>
                             <p class="lead">I'm a senior software engineer who loves turning messy, ambiguous problems into <em>clean, friendly</em> software.</p>
-                            <p>At Breezy HR I work across a full-stack JavaScript and Node.js platform. Lately I've been building LLM-powered features on AWS Bedrock, including an AI candidate-sourcing tool whose per-run inference cost I cut by 90%. I also own production releases and incident response, and chase fun wins like trimming our image-infrastructure bill by roughly 97%. I care about the details people never notice and the ones they feel every day.</p>
+                            <p>At Breezy HR I work across a full-stack JavaScript and Node.js platform. Lately I've been building LLM-powered features, including an AI candidate-sourcing tool that surfaces the best-fit applicants from a company's existing database. I also own production releases and incident response, and chase fun wins like trimming our image-infrastructure bill by roughly 97%. I care about the details people never notice and the ones they feel every day.</p>
                             <p>When I'm not in the editor, you'll find me on the pickleball court, hunting down a really good cup of coffee, or hanging out with my corgi, Dexter. ☕</p>
                             <dl class="about__facts">
                                 <div><dt>Focus</dt><dd>Full-stack JS &amp; Node.js</dd></div>
@@ -179,8 +179,8 @@
             <!-- Marquee divider -->
             <div class="marquee" aria-hidden="true">
                 <div class="marquee__track">
-                    <span>JavaScript</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Node.js</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>Vue</span><span class="sep">✦</span><span>GraphQL</span><span class="sep">✦</span><span>AI / LLM</span><span class="sep">✦</span><span>AWS Bedrock</span><span class="sep">✦</span><span>MongoDB</span><span class="sep">✦</span><span>Redis</span><span class="sep">✦</span><span>Elasticsearch</span><span class="sep">✦</span><span>AWS</span><span class="sep">✦</span><span>Docker</span><span class="sep">✦</span>
-                    <span>JavaScript</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Node.js</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>Vue</span><span class="sep">✦</span><span>GraphQL</span><span class="sep">✦</span><span>AI / LLM</span><span class="sep">✦</span><span>AWS Bedrock</span><span class="sep">✦</span><span>MongoDB</span><span class="sep">✦</span><span>Redis</span><span class="sep">✦</span><span>Elasticsearch</span><span class="sep">✦</span><span>AWS</span><span class="sep">✦</span><span>Docker</span><span class="sep">✦</span>
+                    <span>JavaScript</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Node.js</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>Vue</span><span class="sep">✦</span><span>GraphQL</span><span class="sep">✦</span><span>AI / LLM</span><span class="sep">✦</span><span>LLMs</span><span class="sep">✦</span><span>MongoDB</span><span class="sep">✦</span><span>Redis</span><span class="sep">✦</span><span>Elasticsearch</span><span class="sep">✦</span><span>AWS</span><span class="sep">✦</span><span>Docker</span><span class="sep">✦</span>
+                    <span>JavaScript</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Node.js</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>Vue</span><span class="sep">✦</span><span>GraphQL</span><span class="sep">✦</span><span>AI / LLM</span><span class="sep">✦</span><span>LLMs</span><span class="sep">✦</span><span>MongoDB</span><span class="sep">✦</span><span>Redis</span><span class="sep">✦</span><span>Elasticsearch</span><span class="sep">✦</span><span>AWS</span><span class="sep">✦</span><span>Docker</span><span class="sep">✦</span>
                 </div>
             </div>
 
@@ -216,8 +216,8 @@
                         <div class="stack__group" data-reveal>
                             <h3 class="stack__label">AI / LLM</h3>
                             <ul class="stack__list">
-                                <li>AWS Bedrock</li>
-                                <li>Claude (Haiku / Sonnet)</li>
+                                <li>LLM integration</li>
+                                <li>Structured output</li>
                                 <li>LLM pipelines</li>
                                 <li>Prompt design</li>
                                 <li>Cost optimization</li>
@@ -252,9 +252,10 @@
                                 <h3 class="timeline__role">Senior Software Engineer</h3>
                                 <p class="timeline__org">Breezy HR · Remote</p>
                                 <ul class="timeline__points">
-                                    <li>Architected and shipped an AI-powered candidate sourcing feature on AWS Bedrock that ranks best-fit candidates from large applicant datasets, supports credit-aware execution, and streams real-time progress over WebSockets.</li>
-                                    <li>Optimized the sourcing pipeline's LLM usage, cutting per-run inference cost by 90% while improving match quality through a multi-stage scoring and reranking pipeline.</li>
-                                    <li>Traced and fixed cross-service failures across 6 Node.js microservices and async pipelines (SNS, BullMQ, Socket.io, MongoDB), eliminating recurring errors in the sourcing workflow.</li>
+                                    <li>Architected and shipped an AI-powered candidate sourcing feature that surfaces best-fit candidates from a company's existing applicant database, with credit-aware execution and matches streamed to recruiters in real time.</li>
+                                    <li>AI-evaluated tens of thousands of candidate profiles, surfacing 1,000+ strong matches across dozens of companies.</li>
+                                    <li>Hardened the reliability of AI applicant scoring, eliminating a class of silent failures so a bad result is always visible and retryable instead of shown as a real score.</li>
+                                    <li>Diagnosed and fixed cross-service failures in async job pipelines, eliminating recurring errors in the sourcing and scoring workflows.</li>
                                     <li>Own weekly production releases: branch management, config propagation, deployments, smoke testing, and incident escalation with hotfixes.</li>
                                     <li>Migrated the image delivery / optimization stack (DNS cutover, URL rewrites, app changes), cutting monthly image-infrastructure spend by ~97%.</li>
                                     <li>Implemented AvaTax-based tax collection across state tax codes, integrated with Stripe for accurate checkout and invoicing.</li>
@@ -305,23 +306,47 @@
                         <div class="case__panel">
                             <span class="case__tag">Featured · Breezy HR</span>
                             <div class="case__stat">
-                                <span class="case__num">90%</span>
-                                <span class="case__statlabel">lower LLM<br />inference cost</span>
+                                <span class="case__num">1,000+</span>
+                                <span class="case__statlabel">best-fit candidates<br />surfaced to recruiters</span>
                             </div>
-                            <div class="case__chips"><span>AWS Bedrock</span><span>Claude</span></div>
+                            <div class="case__chips"><span>AI / LLM</span><span>Recruiting</span></div>
                         </div>
                         <div class="case__content">
                             <h3 class="case__title">AI Candidate Sourcing</h3>
-                            <p class="case__desc">An AI-powered sourcing feature on AWS Bedrock that ranks best-fit candidates from large applicant datasets, with credit-aware execution and real-time progress streamed over WebSockets.</p>
+                            <p class="case__desc">An AI feature that mines a company's existing applicant database to surface the best-fit people for any open role, with matches streamed to recruiters in real time. No new sourcing spend, just smarter use of the candidates they already have.</p>
                             <ul class="case__points">
-                                <li>Designed a multi-stage LLM scoring and reranking pipeline that improved match quality.</li>
-                                <li>Cut per-run inference cost by 90% while raising result quality.</li>
-                                <li>Hardened reliability across 6 Node.js microservices (SNS, BullMQ, Socket.io, MongoDB).</li>
+                                <li>AI-evaluated tens of thousands of candidate profiles, surfacing 1,000+ strong matches across dozens of companies.</li>
+                                <li>Owned the recruiter workflow end to end, from suggested matches to automated outreach.</li>
+                                <li>Built data-quality guards so stale or low-quality profiles stay out of recommendations.</li>
                             </ul>
-                            <ul class="tags"><li>AWS Bedrock</li><li>Claude</li><li>Node.js</li><li>WebSockets</li><li>LLM pipelines</li></ul>
+                            <ul class="tags"><li>AI / LLM</li><li>Node.js</li><li>Real-time</li><li>Recruiting</li></ul>
                         </div>
                     </article>
-                    <p class="work__more" data-reveal>More case studies on the way. In the meantime, find me on <a href="https://github.com/andydnguyen" target="_blank" rel="noopener">GitHub</a>.</p>
+                    <div class="work__grid">
+                        <article class="card" data-reveal>
+                            <div class="card__media card__media--brand">
+                                <span class="card__badge">Breezy HR</span>
+                                <span class="card__brandmark">Reliable AI</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__top"><h3 class="card__title">Trustworthy AI Scoring</h3></div>
+                                <p class="card__desc">Recruiters score every applicant against a role with AI. I tracked down a class of silent failures that returned invalid or zero scores, then rebuilt the flow so a bad result is always visible and retryable, never shown as a real score. Eliminated hundreds of mis-scored evaluations a day.</p>
+                                <ul class="tags"><li>AI / LLM</li><li>Reliability</li><li>Node.js</li></ul>
+                            </div>
+                        </article>
+                        <article class="card" data-reveal>
+                            <div class="card__media card__media--brand">
+                                <span class="card__badge">Breezy HR</span>
+                                <span class="card__brandmark">Integrations</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__top"><h3 class="card__title">Self-Serve Marketplace Integration</h3></div>
+                                <p class="card__desc">A one-click integration that lets companies activate the product straight from a major HR / payroll marketplace, with the sales pipeline kept in sync automatically. Event-driven activation replaced a manual onboarding process and kept records accurate across trial, activation, and cancellation.</p>
+                                <ul class="tags"><li>Integrations</li><li>Event-driven</li><li>Salesforce</li></ul>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="work__more" data-reveal>More on <a href="https://github.com/andydnguyen" target="_blank" rel="noopener">GitHub</a>.</p>
                 </div>
             </section>
 
@@ -376,6 +401,6 @@
             </div>
         </footer>
 
-        <script src="assets/js/site.js?v=2"></script>
+        <script src="assets/js/site.js?v=3"></script>
     </body>
 </html>
