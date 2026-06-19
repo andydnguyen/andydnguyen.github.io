@@ -1052,6 +1052,10 @@ input, textarea { font: inherit; }
     .nav.menu-open .nav__toggle span:first-child { transform: translateY(4px) rotate(45deg); }
     .nav.menu-open .nav__toggle span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
+    /* backdrop-filter creates a containing block that traps the fixed overlay
+       inside the nav bar; drop it while the menu is open so inset:0 = viewport */
+    .nav.menu-open { backdrop-filter: none; -webkit-backdrop-filter: none; }
+
     .nav__links {
         position: fixed;
         inset: 0;
