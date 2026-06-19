@@ -1097,6 +1097,10 @@ input, textarea { font: inherit; }
         transition-duration: 0.001ms !important;
     }
     [data-reveal] { opacity: 1; transform: none; }
-    .marquee__track { animation: none; }
+    /* keep a gentle drift instead of freezing (override the global clamp above) */
+    .marquee__track {
+        animation: marquee 90s linear infinite !important;
+        animation-iteration-count: infinite !important;
+    }
     .hero__squiggle path { stroke-dashoffset: 0; }
 }
