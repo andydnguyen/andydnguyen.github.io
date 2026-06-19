@@ -115,6 +115,26 @@
         hero.addEventListener("pointerleave", function () { glow.style.opacity = "0"; });
     }
 
+    /* ----- Marquee: JS-driven so it never freezes (Low Power / Reduce Motion
+       pause CSS animations; rAF keeps running, just throttled) ------------ */
+    var track = document.querySelector(".marquee__track");
+    if (track) {
+        track.style.animation = "none"; // take over from CSS
+        var halfW = track.scrollWidth / 2; // track content is duplicated 2x
+        window.addEventListener("resize", function () { halfW = track.scrollWidth / 2; }, { passive: true });
+        var pps = halfW / (prefersReduced ? 90 : 38); // pixels/sec ~ matches CSS loop time
+        var x = 0, last = 0;
+        requestAnimationFrame(function step(t) {
+            if (last) {
+                x -= pps * (t - last) / 1000;
+                if (halfW && x <= -halfW) { x += halfW; }
+                track.style.transform = "translateX(" + x + "px)";
+            }
+            last = t;
+            requestAnimationFrame(step);
+        });
+    }
+
     /* ----- Contact form: AJAX submit to Formspree ----------------------- */
     var form = document.getElementById("contactForm");
     var status = document.getElementById("formStatus");

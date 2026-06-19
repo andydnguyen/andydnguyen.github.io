@@ -596,7 +596,7 @@ input, textarea { font: inherit; }
     gap: 2rem;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 38s linear infinite;
+    animation: marquee 38s linear infinite; /* fallback; JS rAF drives it (works in Low Power / Reduce Motion) */
 }
 .marquee__track span {
     font-family: var(--font-display);
@@ -1097,10 +1097,6 @@ input, textarea { font: inherit; }
         transition-duration: 0.001ms !important;
     }
     [data-reveal] { opacity: 1; transform: none; }
-    /* keep a gentle drift instead of freezing (override the global clamp above) */
-    .marquee__track {
-        animation: marquee 90s linear infinite !important;
-        animation-iteration-count: infinite !important;
-    }
+    .marquee__track { animation: none; } /* JS rAF keeps a gentle drift instead */
     .hero__squiggle path { stroke-dashoffset: 0; }
 }
