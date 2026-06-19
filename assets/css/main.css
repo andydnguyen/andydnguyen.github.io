@@ -1062,9 +1062,7 @@ input, textarea { font: inherit; }
         flex-direction: column;
         justify-content: center;
         gap: 1.6rem;
-        background: rgba(252, 245, 234, 0.97);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
+        background: var(--bg);
         transform: translateX(100%);
         transition: transform 0.5s var(--ease);
         padding: 2rem;
